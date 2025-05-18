@@ -1,0 +1,1 @@
+# link.kaz.dev
