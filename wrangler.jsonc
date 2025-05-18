@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "link-kaz-dev",
+  "main": "./src/index.tsx",
+  "compatibility_date": "2025-05-18",
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "c06e069b8adc4108995ff3861904f24c",
+      "preview_id": "638101e7f4fc4f5e8f75b879da2b2d7e"
+    }
+  ],
+  "secrets_store_secrets": [
+    {
+      "store_id": "fb9a2e2a200247819490ff7c5f3c8b0f",
+      "binding": "LINK_KAZ_DEV_ADMIN_USER",
+      "secret_name": "link-kaz-dev-admin-user"
+    },
+    {
+      "store_id": "fb9a2e2a200247819490ff7c5f3c8b0f",
+      "binding": "LINK_KAZ_DEV_ADMIN_PASSWORD",
+      "secret_name": "link-kaz-dev-admin-password"
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "link.kaz.dev",
+      "custom_domain": true
+    }
+  ]
+}
